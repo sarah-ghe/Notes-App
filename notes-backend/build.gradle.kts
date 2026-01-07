@@ -23,7 +23,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("com.example.ApplicationKt")
+    mainClass.set("com.example.notes.ApplicationKt")
 }
 
 tasks.test {
