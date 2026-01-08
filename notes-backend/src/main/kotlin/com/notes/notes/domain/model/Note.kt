@@ -1,4 +1,4 @@
-package com.example.notes.domain.model
+package com.notes.notes.domain.model
 
 import java.time.LocalDateTime
 

@@ -1,7 +1,7 @@
-package com.example.notes.application.usecase
+package com.notes.notes.application.usecase
 
-import com.example.notes.domain.model.Note
-import com.example.notes.domain.repository.NoteRepository
+import com.notes.notes.domain.model.Note
+import com.notes.notes.domain.repository.NoteRepository
 
 class CreateNoteUseCase(private val noteRepository: NoteRepository) { //interface
     fun execute(title: String, content: String): Note { //returns a note

@@ -1,6 +1,6 @@
-package com.example.notes.domain.repository
+package com.notes.notes.domain.repository
 
-import com.example.notes.domain.model.Note
+import com.notes.notes.domain.model.Note
 
 
 interface NoteRepository {

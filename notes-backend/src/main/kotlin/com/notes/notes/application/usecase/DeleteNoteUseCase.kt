@@ -1,6 +1,6 @@
-package com.example.notes.application.usecase
+package com.notes.notes.application.usecase
 
-import com.example.notes.domain.repository.NoteRepository
+import com.notes.notes.domain.repository.NoteRepository
 
 class DeleteNoteUseCase(
     private val noteRepository: NoteRepository

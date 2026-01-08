@@ -1,7 +1,7 @@
-package com.example.notes.infrastructure.repositoryImpl
+package com.notes.notes.infrastructure.repositoryImpl
 
-import com.example.notes.domain.model.Note
-import com.example.notes.domain.repository.NoteRepository
+import com.notes.notes.domain.model.Note
+import com.notes.notes.domain.repository.NoteRepository
 
 class InMemoryNoteRepository : NoteRepository {
 

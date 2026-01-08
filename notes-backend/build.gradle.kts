@@ -3,7 +3,7 @@ plugins {
     application
 }
 
-group = "com.example"
+group = "com.notes"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -23,7 +23,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("com.example.notes.ApplicationKt")
+    mainClass.set("com.notes.notes.ApplicationKt")
 }
 
 tasks.test {

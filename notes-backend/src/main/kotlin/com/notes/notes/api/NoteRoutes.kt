@@ -1,11 +1,11 @@
-package com.example.notes.api
+package com.notes.notes.api
 
-import com.example.notes.application.usecase.CreateNoteUseCase
-import com.example.notes.application.usecase.GetAllNotesUseCase
-import com.example.notes.application.usecase.GetNoteByIdUseCase
-import com.example.notes.application.usecase.UpdateNoteUseCase
-import com.example.notes.application.usecase.DeleteNoteUseCase
-import com.example.notes.api.UpdateNoteRequest
+import com.notes.notes.application.usecase.CreateNoteUseCase
+import com.notes.notes.application.usecase.GetAllNotesUseCase
+import com.notes.notes.application.usecase.GetNoteByIdUseCase
+import com.notes.notes.application.usecase.UpdateNoteUseCase
+import com.notes.notes.application.usecase.DeleteNoteUseCase
+import com.notes.notes.api.UpdateNoteRequest
 import io.ktor.server.routing.*
 import io.ktor.server.application.*
 import io.ktor.server.response.*
