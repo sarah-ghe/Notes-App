@@ -1,4 +1,4 @@
-package com.notes.notes.api
+package com.notes.notes.api.dto
 
 data class UpdateNoteRequest(
     val title: String?,

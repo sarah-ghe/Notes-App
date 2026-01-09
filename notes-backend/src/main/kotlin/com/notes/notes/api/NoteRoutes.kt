@@ -5,7 +5,7 @@ import com.notes.notes.application.usecase.GetAllNotesUseCase
 import com.notes.notes.application.usecase.GetNoteByIdUseCase
 import com.notes.notes.application.usecase.UpdateNoteUseCase
 import com.notes.notes.application.usecase.DeleteNoteUseCase
-import com.notes.notes.api.UpdateNoteRequest
+import com.notes.notes.api.dto.UpdateNoteRequest
 import io.ktor.server.routing.*
 import io.ktor.server.application.*
 import io.ktor.server.response.*
@@ -20,12 +20,14 @@ fun Route.noteRoutes(
 ) {
 
     post("/notes") {
-        val request = call.receive<Map<String, String>>()
-        val title = request["title"] ?: ""
-        val content = request["content"] ?: ""
-        val note = createNoteUseCase.execute(title, content)
-        call.respond(note)
-    }
+    val request = call.receive<CreateNoteRequest>()
+    val note = createNoteUseCase.execute(
+        title = request.title ?: "",
+        content = request.content ?: ""
+    )
+    call.respond(note)
+}
+
 
     get("/notes") {
         val notes = getAllNotesUseCase.execute()
