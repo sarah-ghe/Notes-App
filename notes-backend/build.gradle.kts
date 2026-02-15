@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.9.10"   // Use 1.9.10 for Ktor compatibility
+    kotlin("jvm") version "1.9.10"
     application
 }
 

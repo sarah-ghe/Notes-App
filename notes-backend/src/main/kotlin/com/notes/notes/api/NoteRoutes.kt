@@ -6,6 +6,7 @@ import com.notes.notes.application.usecase.GetNoteByIdUseCase
 import com.notes.notes.application.usecase.UpdateNoteUseCase
 import com.notes.notes.application.usecase.DeleteNoteUseCase
 import com.notes.notes.api.dto.UpdateNoteRequest
+import com.notes.notes.api.dto.CreateNoteRequest
 import io.ktor.server.routing.*
 import io.ktor.server.application.*
 import io.ktor.server.response.*
