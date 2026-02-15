@@ -53,6 +53,9 @@ export async function updateNote(id: string, note: CreateNoteRequest): Promise<v
 export async function deleteNote(id: string): Promise<void> {
     const res = await fetch(`${BASE_URL}/notes/${id}`, {
         method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+    }
     })
     if (!res.ok) {
         throw new Error("Failed to delete note")
